@@ -59,13 +59,13 @@ Inside this project I have passing the simple JSON response by using node.js .
 And after that I have created Dockerfile to build the docker image by using this command 
 
 ```
-docker build -t nodeapp .
+docker build -t <image_name> .
 ```
 
 After that to create a container for that image, so we can run that image, we need to use the below command
 
 ```
-docker run -d -p 3000:9000 --name deepakapplication nodeapp
+docker run -d -p 3000:9000 --name <container_name> <image_name>
 ```
 
 Output of my Express web application
